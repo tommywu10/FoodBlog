@@ -74,23 +74,23 @@ header h1 {
 
 /* -------------------FOOD DISPLAY-HOME----------------- */
 
-.main-food-display-container {
+.flavor-of-the-week-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 
-.main-food-display-card {
+.fotw-card {
   display: flex;
   flex-direction: column;
   
 }
-.main-food-display-card p {
+.fotw-card p {
   font-size: 14px;
 }
 
-.main-food-display-card img {
+.fotw-card img {
   width: 475px;
 }
 
