@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/FoodBlog/static/css/main.7cb2c67f.chunk.css",
+    "main.js": "/FoodBlog/static/js/main.d83135dd.chunk.js",
+    "main.js.map": "/FoodBlog/static/js/main.d83135dd.chunk.js.map",
+    "runtime-main.js": "/FoodBlog/static/js/runtime-main.f19343a6.js",
+    "runtime-main.js.map": "/FoodBlog/static/js/runtime-main.f19343a6.js.map",
+    "static/js/2.8c1ecb05.chunk.js": "/FoodBlog/static/js/2.8c1ecb05.chunk.js",
+    "static/js/2.8c1ecb05.chunk.js.map": "/FoodBlog/static/js/2.8c1ecb05.chunk.js.map",
+    "static/js/3.239ffa0a.chunk.js": "/FoodBlog/static/js/3.239ffa0a.chunk.js",
+    "static/js/3.239ffa0a.chunk.js.map": "/FoodBlog/static/js/3.239ffa0a.chunk.js.map",
+    "index.html": "/FoodBlog/index.html",
+    "static/css/main.7cb2c67f.chunk.css.map": "/FoodBlog/static/css/main.7cb2c67f.chunk.css.map",
+    "static/js/2.8c1ecb05.chunk.js.LICENSE.txt": "/FoodBlog/static/js/2.8c1ecb05.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f19343a6.js",
+    "static/js/2.8c1ecb05.chunk.js",
+    "static/css/main.7cb2c67f.chunk.css",
+    "static/js/main.d83135dd.chunk.js"
+  ]
+}
