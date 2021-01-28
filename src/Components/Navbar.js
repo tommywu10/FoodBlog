@@ -14,14 +14,17 @@ export default function Navbar(){
             <Modal 
                 isOpen={isModalOpen}
                 className="modal" >
-                    <h2 className="modal-title">Log In</h2>
-                    <LogInForm />
-                    <button 
-                        onClick={() => setIsModalOpen(false)}
-                        className="modal-close-button">
-                            Close
-                    </button>
-                    <p>Don't have an account? Register now!</p>
+                    <div className="modal-content">
+                        <h2 className="modal-title">Log In</h2>
+                        <LogInForm />
+                        
+                        <p>Don't have an account? Register now!</p>
+                        <button 
+                            onClick={() => setIsModalOpen(false)}
+                            className="modal-close-button">
+                                Close
+                        </button>
+                    </div>
             </Modal>
 
             <Link 

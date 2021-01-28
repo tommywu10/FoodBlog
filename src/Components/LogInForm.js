@@ -11,22 +11,21 @@ export default function LogInForm(){
     
     return(
         <div>
-            <form onSubmit={handleSubmit}>
-                <label for="email"> Email
-                    <input 
-                        type="text"
-                        name="email"
-                        onChange={handleInputChange}   
-                        value={inputs.email}
-                    />
-                </label>
-                <label for="password"> Password
-                    <input 
-                        type="password"
-                        name="password"
-                        onChange={handleInputChange}   
-                        value={inputs.password}/>
-                </label>
+            <form onSubmit={handleSubmit} className="log-in-form-container">
+                <input 
+                    type="text"
+                    name="email"
+                    onChange={handleInputChange}   
+                    value={inputs.email}
+                    placeholder="Email"
+                />
+                <input 
+                    type="password"
+                    name="password"
+                    onChange={handleInputChange}   
+                    value={inputs.password}
+                    placeholder="Password"/>
+                
                 <button>Log In</button>
             </form>
         </div>

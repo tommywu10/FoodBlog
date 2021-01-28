@@ -79,8 +79,26 @@ header h1 {
   background: white;
 }
 
+.modal-content {
+  margin: 20px 52px;
+}
+
 .modal-title {
-  margin: 30px 0;
+  margin-bottom: 20px;
+}
+
+/* -------------------LOG IN FORM----------------- */
+
+.log-in-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.log-in-form-container input {
+  height: 30px;
+  width: 100%;
 }
 /* -------------------HOME-MAIN----------------- */
 
@@ -220,6 +238,7 @@ header h1 {
 .meal-area {
   padding: 15px;
 }
+
 /* -------------------FOOTER----------------- */
 
 footer {
