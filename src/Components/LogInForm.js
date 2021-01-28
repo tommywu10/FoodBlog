@@ -26,7 +26,7 @@ export default function LogInForm(){
                     value={inputs.password}
                     placeholder="Password"/>
                 
-                <button>Log In</button>
+                <button>LOG IN</button>
             </form>
         </div>
     )

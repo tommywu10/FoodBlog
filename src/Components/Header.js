@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
+import {Link} from 'react-router-dom'
 
 export default function Header(){
     return (
         <div>
             <header>
-                <h1>Crazy Kitchen Chicken</h1>
+                <Link to="/" className="header-title"><h1>Crazy Kitchen Chicken</h1></Link>
                 <Navbar/>
             </header>
 
