@@ -14,7 +14,8 @@
 :root {
   --section-titles: 'Amatic SC', cursive;
   --section-p: 'Jost', sans-serif;
-
+  --primary-color: rgb(236, 93, 10);
+  --secondary-color: rgb(10, 112, 245);
 }
 
 /* -------------------HEADER----------------- */
@@ -38,23 +39,56 @@ header {
 header h1 {
   font-family: 'Bungee', cursive;
 }
-
+/*-------------------- NAV BAR------------------------------ */
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .link {
   margin: 0 5px;
   text-decoration: none;
   color: black;
+  text-align: center;
 }
 
+.log-in-button {
+  border: 1px solid black;
+  margin-top: 3px;
+  padding: 3px 10px 5px 10px;
+  font-size: 14px;
+  transition: ease-in-out .4s;
+  font-weight: bold;
+}
+
+.log-in-button:hover {
+  background: var(--secondary-color);
+  color: white;
+}
+
+/* -------------------MODAL----------------- */
+
+.modal {
+  border: 1px solid black;
+  width: 50%;
+  height: 300px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+}
+
+.modal-title {
+  margin: 30px 0;
+}
 /* -------------------HOME-MAIN----------------- */
 
 .home-main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 
 .home-main p {
@@ -105,17 +139,21 @@ header h1 {
 .ryl-food-display-card {
   display: flex;
   flex-direction: column;
-  justify-content:center;
   align-items: center;
   margin-bottom: 25px;
 }
 
 .ryl-food-display-card img {
-  width: 175px;
+  width: 150px;
 }
 
 .ryl-container h1 {
   margin: 30px;
+}
+
+.ryl-container {
+  position: relative;
+  top: 50px;
 }
 
 
@@ -134,6 +172,54 @@ header h1 {
   padding-right: 40px;
 }
 
+
+/* -------------------RECIPE PAGE----------------- */
+.recipe-card-container {
+  margin: 0 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.recipe-card-container h1 {
+  margin: 40px 0;
+}
+
+.recipe-card-container h3 {
+  margin: 15px 0;
+}
+
+.ingredients-instructions-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: left;
+}
+
+.instructions {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.ingredients-instructions-container ul{
+  list-style-type: none;
+  background-color: rgb(10, 112, 245);
+  height: 100%;
+  width: 200px;
+  padding: 15px;
+}
+
+.meal-title {
+  border-bottom: 1px solid gray;
+  padding-bottom: 6px;
+  width: fit-content;
+}
+
+.meal-area {
+  padding: 15px;
+}
 /* -------------------FOOTER----------------- */
 
 footer {
@@ -141,6 +227,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .footer-links {
@@ -148,7 +235,7 @@ footer {
 }
 
 .footer-links p {
-  margin: 20px 5px;
+  margin: 20px 13px;
 } 
 
 .social-icon {

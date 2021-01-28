@@ -8,9 +8,11 @@ export default function Header(){
                 <h1>Crazy Kitchen Chicken</h1>
                 <Navbar/>
             </header>
+
             <div id="banner-header">
                 <p>The Ultimate Blog for your Cluckin' Needs</p>
             </div>
+
         </div>
     )
 }
