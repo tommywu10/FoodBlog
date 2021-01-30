@@ -8,6 +8,8 @@ import Food from './Components/Food';
 import Register from './Components/Register';
 import ForgotPassword from './Components/ForgotPassword';
 import ChickenKaraage from './Components/HomePageRecipes/ChickenKaraage';
+import ChickenBasquaise from './Components/NewRecipes/ChickenBasquaise';
+import ChickenParmentier from './Components/NewRecipes/ChickenParmentier';
 
 function App() {
 
@@ -39,6 +41,8 @@ function App() {
           <Route path="/chicken-karaage" render={() => (<ChickenKaraage dataArray={dataArray}/>)}/>
           <Route path="/register" component={Register}/>
           <Route path="/forgotpassword" component={ForgotPassword}/>
+          <Route path="/chickenbasquaise" render={() => (<ChickenBasquaise dataArray={dataArray}/>)}/>
+          <Route path="/chickenparmentier" render={() => (<ChickenParmentier dataArray={dataArray}/>)}/>
         </Switch>
 
       </BrowserRouter>

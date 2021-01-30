@@ -234,6 +234,55 @@ header {
 }
 
 
+
+
+/* -------------------HOME PAGE IMAGE----------------- */
+
+.home-page-image-container {
+  background-image: url('fried-chicken.jpg');
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgb(124, 123, 123);
+  height: 450px;
+  color: white;
+  text-align: right;
+  margin: 70px 0;
+}
+
+.home-page-image-container h1 {
+  position: relative;
+  top: 85%;
+  margin: 0 20px;
+}
+/* -------------------CHICKEN INFO----------------- */
+.chicken-info-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.chicken-info-container img {
+  width: 400px;
+}
+
+.chicken-info-information {
+  width: 40%;
+  font-family: var(--section-p);
+  font-size: 20px;
+  margin: 30px 0;
+  text-align: initial;
+}
+
+.chicken-info-information ul {
+  margin: 20px 0;
+  
+}
+
+#orange-highlight {
+  color: var(--primary-color);
+}
+
 /* -------------------RECIPE PAGE----------------- */
 .recipe-card-container {
   margin: 0 30px 30px 30px;
