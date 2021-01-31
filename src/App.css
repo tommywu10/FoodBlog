@@ -155,7 +155,6 @@ header {
 .home-main p {
   font-size: 18px;
   font-family: var(--section-p);
-  margin: 10px;
 }
 
 .home-main h1 {
@@ -221,17 +220,40 @@ header {
 /* -------------------NEW RECIPES - HOME----------------- */
 
 .new-recipes-card {
-  margin-bottom: 25px;
+  margin-bottom: 60px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
-.new-recipes-container img {
-  width: 175px;
+
+.new-recipes-card p {
+  background-color: rgba(49, 49, 49, 0.7);
+  width: 100%;
+  height: 35px;
+  padding: 4px 0;
+  font-size: 16px;
+}
+
+.new-recipes-card img {
+  transition: linear .5s;
+}
+
+.new-recipes-card img:hover {
+  opacity: .75;
 }
 
 .new-recipes-container {
   border-right: 1px solid black;
   padding-right: 40px;
 }
+
+.new-recipes-link {
+  text-decoration: none;
+}
+
 
 
 
@@ -243,7 +265,7 @@ header {
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
-  background-color: rgb(124, 123, 123);
+  background-color: rgb(150, 149, 149);
   height: 450px;
   color: white;
   text-align: right;
