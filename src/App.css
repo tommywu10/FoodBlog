@@ -48,7 +48,7 @@ header {
 }
 
 .link {
-  margin: 0 5px;
+  margin: 0 12px;
   text-decoration: none;
   color: black;
   text-align: center;
@@ -208,7 +208,7 @@ header {
 }
 
 .ryl-container h1 {
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .ryl-container {
@@ -217,40 +217,43 @@ header {
 }
 
 
-/* -------------------NEW RECIPES - HOME----------------- */
+/* -------------------RECIPES CARDS - HOME----------------- */
 
-.new-recipes-card {
+.recipes-card {
   margin-bottom: 60px;
   height: 200px;
   width: 200px;
   display: flex;
   flex-direction: column;
   color: white;
+  position: relative;
 }
 
 
-.new-recipes-card p {
-  background-color: rgba(49, 49, 49, 0.7);
+.recipes-card p {
+  background-color: rgba(49, 49, 49, 0.4);
   width: 100%;
   height: 35px;
   padding: 4px 0;
   font-size: 16px;
+  position: relative;
+  bottom:31px;
 }
 
-.new-recipes-card img {
-  transition: linear .5s;
+.recipes-card img {
+  transition: linear .2s;
 }
 
-.new-recipes-card img:hover {
-  opacity: .75;
+.recipes-card img:hover {
+  opacity: .8;
 }
 
-.new-recipes-container {
+.recipes-container {
   border-right: 1px solid black;
   padding-right: 40px;
 }
 
-.new-recipes-link {
+.recipes-link {
   text-decoration: none;
 }
 

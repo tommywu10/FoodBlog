@@ -10,6 +10,9 @@ import ForgotPassword from './Components/ForgotPassword';
 import ChickenKaraage from './Components/HomePageRecipes/ChickenKaraage';
 import ChickenBasquaise from './Components/NewRecipes/ChickenBasquaise';
 import ChickenParmentier from './Components/NewRecipes/ChickenParmentier';
+import TandooriChicken from './Components/RYL/TandooriChicken';
+import ChickenCousCous from './Components/RYL/ChickenCousCous';
+import KungPaoch from './Components/RYL/KungPaoChicken'
 
 function App() {
 
@@ -43,6 +46,10 @@ function App() {
           <Route path="/forgotpassword" component={ForgotPassword}/>
           <Route path="/chickenbasquaise" render={() => (<ChickenBasquaise dataArray={dataArray}/>)}/>
           <Route path="/chickenparmentier" render={() => (<ChickenParmentier dataArray={dataArray}/>)}/>
+          <Route path="/tandoorichicken" render={() => (<TandooriChicken dataArray={dataArray}/>)}/>
+          <Route path="/chickencouscous" render={() => (<ChickenCousCous dataArray={dataArray}/>)}/>
+          <Route path="/kungpaochicken" render={() => (<KungPaoch dataArray={dataArray}/>)}/>
+
         </Switch>
 
       </BrowserRouter>
