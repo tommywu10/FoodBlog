@@ -369,16 +369,43 @@ header {
 /* -------------------RECIPES MAIN PAGE----------------- */
 
 .recipes-main-page-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 20px 0;
+}
 
+.recipes-main-card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 300px);
+  grid-row-gap: 40px;
+  justify-content: center;
+  margin: 50px 0 ;
 }
 
 .recipes-main-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  box-shadow: 8px 5px 5px 3px gray;
+  width: 250px;
+  transition: .1s linear;
+  cursor: pointer;
+}
+
+.recipes-main-card-text {
+  text-align: left;
+  margin: 15px 8px;
+}
+
+.recipes-main-card img {
+  width: 100%;
+}
+
+#recipes-main-page-container-subtitle {
+  margin: 15px 0;
+}
+
+.recipes-main-card:hover {
+  transform: scale(1.05);
 }
 /* -------------------FOOTER----------------- */
 
