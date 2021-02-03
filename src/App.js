@@ -32,14 +32,14 @@ function App() {
     }, [])
 
   const dataArray = Object.values(data)/* Object.keys(data).map(i => data[i]) */
-
+  
   return (
     <div className="App">
       <BrowserRouter>
 
         <Switch>
           <Route exact path="/" render={() => (<Home dataArray={dataArray}/>)}/>
-          <Route path="/recipes" component={Recipes}/>
+          <Route path="/recipes" render={() => (<Recipes dataArray={dataArray}/>)}/>
           <Route path="/food" component={Food}/>
           <Route path="/chicken-karaage" render={() => (<ChickenKaraage dataArray={dataArray}/>)}/>
           <Route path="/register" component={Register}/>

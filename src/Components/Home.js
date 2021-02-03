@@ -11,7 +11,7 @@ export default function Home({dataArray}){
 
     
     return(
-        <div>
+        <div className="home-container">
 
             <Header />   
 
