@@ -38,7 +38,7 @@ function App() {
       <BrowserRouter>
 
         <Switch>
-          <Route exact path="/" render={() => (<Home dataArray={dataArray}/>)}/>
+          <Route exact path="/FoodBlog" render={() => (<Home dataArray={dataArray}/>)}/>
           <Route path="/recipes" render={() => (<Recipes dataArray={dataArray}/>)}/>
           <Route path="/shop" component={Shop}/>
           <Route path="/chicken-karaage" render={() => (<ChickenKaraage dataArray={dataArray}/>)}/>
