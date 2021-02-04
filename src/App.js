@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './Components/Home';
 import Recipes from './Components/Recipes';
-import Food from './Components/Food';
+import Shop from './Components/Shop';
 import Register from './Components/Register';
 import ForgotPassword from './Components/ForgotPassword';
 import ChickenKaraage from './Components/HomePageRecipes/ChickenKaraage';
@@ -40,7 +40,7 @@ function App() {
         <Switch>
           <Route exact path="/" render={() => (<Home dataArray={dataArray}/>)}/>
           <Route path="/recipes" render={() => (<Recipes dataArray={dataArray}/>)}/>
-          <Route path="/food" component={Food}/>
+          <Route path="/shop" component={Shop}/>
           <Route path="/chicken-karaage" render={() => (<ChickenKaraage dataArray={dataArray}/>)}/>
           <Route path="/register" component={Register}/>
           <Route path="/forgotpassword" component={ForgotPassword}/>
