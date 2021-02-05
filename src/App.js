@@ -16,7 +16,7 @@ import KungPaoch from './Components/RYL/KungPaoChicken'
 
 function App() {
 
-  let [data, setData] = useState('')
+  let [data, setData] = useState([])
 
     useEffect(() => {
         fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=chicken')
@@ -38,7 +38,7 @@ function App() {
       <BrowserRouter>
 
         <Switch>
-          <Route exact path="/FoodBlog" render={() => (<Home dataArray={dataArray}/>)}/>
+          <Route exact path="/" render={() => (<Home dataArray={dataArray}/>)}/>
           <Route path="/recipes" render={() => (<Recipes dataArray={dataArray}/>)}/>
           <Route path="/shop" component={Shop}/>
           <Route path="/chicken-karaage" render={() => (<ChickenKaraage dataArray={dataArray}/>)}/>
