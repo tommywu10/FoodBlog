@@ -272,7 +272,7 @@ header {
 /* -------------------HOME PAGE IMAGE----------------- */
 
 .home-page-image-container {
-  background-image: url('fried-chicken.jpg');
+  background-image: url('./fried-chicken.jpg');
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;

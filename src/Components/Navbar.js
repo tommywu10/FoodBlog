@@ -2,7 +2,10 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import Modal from 'react-modal'
 import LogInForm from './LogInForm'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 Modal.setAppElement('#root')
+
 
 export default function Navbar(){
 
@@ -40,6 +43,7 @@ export default function Navbar(){
             <Link to="/" className="link">Home</Link>
             <Link to="/recipes" className="link">Recipes</Link>
             <Link to="/shop" className="link">Shop</Link>
+            <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} /></Link>
         </div>
     )
 }
