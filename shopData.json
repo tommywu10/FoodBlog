@@ -1,0 +1,49 @@
+{
+  "chicken": [
+      {
+          "id": "01",
+          "name": "Live Chicken",
+          "price": "$19.99",
+          "image": "https://images.unsplash.com/photo-1593448512271-22eedd991fec?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80",
+          "description": "A domestic fowl kept for its eggs or meat, especially a young one."
+      }, 
+      
+      {
+          "id": "02",
+          "name": "Raw Chicken",
+          "price": "$9.99",
+          "image": "https://www.theladders.com/wp-content/uploads/chicken_190503-800x450.jpg",
+          "description": "An uncooked chicken. Raw chicken is often contaminated with Campylobacter bacteria and sometimes with Salmonella and Clostridium perfringens bacteria."
+      },
+
+      {
+          "id": "03",
+          "name": "Cucco",
+          "price": "$99.99",
+          "image": "https://static.wikia.nocookie.net/dynastywarriors/images/6/6e/Hyrule_Warriors_Giant_Cucco.png/revision/latest?cb=20190902212842",
+          "description": "A cucco can be found in the vast land of Hyrule. If you attack them, they'll form a revenge squad and end you.'"
+      },
+
+      {
+          "id": "04",
+          "name": "Stardew Valley Chicken",
+          "price": "$199.99",
+          "image": "https://www.pngkey.com/png/detail/219-2197908_pixilart-stardew-valley-chicken-logo.png",
+          "description": "A chicken from Marnie's Ranch in Stardew Valley. There are 4 different colors of chickens: white, brown, blue, and void."
+      },
+      {
+          "id": "05",
+          "name": "Chicken Little",
+          "price": "$999.99",
+          "image": "https://www.rotoscopers.com/wp-content/uploads/2019/03/Chicken_Little.jpg",
+          "description": "A young chicken who throws his small town into panic by claiming the sky is falling. Discovers that his town will be invaded by aliens."
+      },
+      {
+          "id": "06",
+          "name": "Heihei",
+          "price": "$9999.99",
+          "image": "https://i.insider.com/583b2cf970296621008b4a07?width=1136&format=jpeg",
+          "description": "He is a bumbling, accident-prone rooster and the village idiot of Motunui."
+      }
+  ]
+}

@@ -407,6 +407,89 @@ header {
 .recipes-main-card:hover {
   transform: scale(1.05);
 }
+/* -------------------SHOP----------------- */
+
+.shop-widget {
+  height: 300px;
+  width: 70%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+
+.shop-widget p {
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+.shop-widget select {
+  width: 200px;
+  padding: 7px 0;
+}
+
+.shop-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.shop-item-card {
+  width: 300px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: var(--section-p);
+  background-color: black;
+}
+
+.shop-item-card img {
+  width: 300px;
+  height: 200px;
+}
+
+.shop-item-card-bottom {
+  background-color: var(--secondary-color);
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+}
+
+.shop-item-card-bottom p{
+  letter-spacing: .5px;
+  margin: 10px 0;
+}
+
+.shop-item-card-bottom button{
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-family: var(--section-p);
+  transition: linear .2s;
+  letter-spacing: .4px;
+}
+
+.shop-item-card-bottom button:hover {
+  background-color: white;
+  color: var(--primary-color);
+
+}
+
 /* -------------------FOOTER----------------- */
 
 footer {
