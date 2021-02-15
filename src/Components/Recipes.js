@@ -7,9 +7,7 @@ export default function Recipes({dataArray}){
 
     return(
         <div>
-            <Header />
             <RecipeMainPage dataArray={dataArray}/>
-            <Footer />
         </div>
     )
 }

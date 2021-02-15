@@ -73,6 +73,16 @@ header {
   color: white;
 }
 
+
+/* -------------------SHOPPING CART----------------- */
+
+.shopping-cart-icon {
+  color: black;
+}
+
+.shopping-cart-icon:hover {
+  color: var(--primary-color);
+}
 /* -------------------MODAL----------------- */
 
 .modal {

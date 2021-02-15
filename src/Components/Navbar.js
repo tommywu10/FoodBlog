@@ -2,12 +2,12 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import Modal from 'react-modal'
 import LogInForm from './LogInForm'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import {ShoppingCart} from "@material-ui/icons"
+import {IconButton, Badge} from '@material-ui/core'
 Modal.setAppElement('#root')
 
 
-export default function Navbar(){
+export default function Navbar({totalItems}){
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -43,7 +43,13 @@ export default function Navbar(){
             <Link to="/" className="link">Home</Link>
             <Link to="/recipes" className="link">Recipes</Link>
             <Link to="/shop" className="link">Shop</Link>
-            <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} /></Link>
+            <Link to="/cart">
+                <IconButton aria-label="Show cart items">
+                    <Badge badgeContent={totalItems} className="shopping-cart-icon">
+                        <ShoppingCart />
+                    </Badge>
+                </IconButton>
+            </Link>
         </div>
     )
 }

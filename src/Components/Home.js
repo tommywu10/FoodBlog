@@ -12,9 +12,6 @@ export default function Home({dataArray}){
     
     return(
         <div className="home-container">
-
-            <Header />   
-
             <div className='home-main'>
                 <NewRecipes dataArray={dataArray}/>
                 <FlavorOfTheWeek dataArray={dataArray}/>
@@ -24,9 +21,8 @@ export default function Home({dataArray}){
             <HomePageImage />
             <ChickenInfo />
             
-            <Footer />
          
-            
+    
             
         </div>
     )
