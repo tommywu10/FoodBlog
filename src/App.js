@@ -16,6 +16,7 @@ import ChickenCousCous from './Components/RYL/ChickenCousCous';
 import KungPaoch from './Components/RYL/KungPaoChicken'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
+import Cart from './Components/Cart'
 
 function App() {
 
@@ -61,8 +62,24 @@ const fetchCart = async () => {
 }
 
 const handleAddToCart = async (productID, quantity) => {
-  const item = await commerce.cart.add(productID, quantity)
-  setCart(item.cart)
+  const {cart} = await commerce.cart.add(productID, quantity)
+  setCart(cart)
+}
+
+const handleUpdateCardQty = async (productID, quantity) => {
+  const {cart} = await commerce.cart.update(productID, {quantity})
+  setCart(cart)
+}
+
+const handleRemoveFromCart = async (productID) => {
+  const {cart} = await commerce.cart.remove(productID)
+  setCart(cart)
+}
+
+
+const handleEmptyCart = async () => {
+  const {cart} = await commerce.cart.empty()
+  setCart(cart)
 }
 
 useEffect(() =>{
@@ -83,6 +100,13 @@ return (
           <Route exact path="/" render={() => (<Home dataArray={dataArray}/>)}/>
           <Route path="/recipes" render={() => (<Recipes dataArray={dataArray}/>)}/>
           <Route path="/shop" render={() => (<Shop shopData={shopData} onAddToCart={handleAddToCart}/>)}/>
+          <Route path="/cart" render={() => (
+            <Cart 
+              cart={cart} 
+              handleEmptyCart={handleEmptyCart} 
+              handleAddToCart={handleAddToCart} 
+              handleRemoveFromCart={handleRemoveFromCart}
+              handleUpdateCardQty={handleUpdateCardQty}/>)}/>
           <Route path="/chicken-karaage" render={() => (<ChickenKaraage dataArray={dataArray}/>)}/>
           <Route path="/register" component={Register}/>
           <Route path="/forgotpassword" component={ForgotPassword}/>

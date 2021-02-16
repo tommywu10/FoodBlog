@@ -1,6 +1,4 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
 import FlavorOfTheWeek from './HomeComponents/FlavorOfTheWeek'
 import RecipesYoullLove from './HomeComponents/RecipesYoullLove'
 import NewRecipes from './HomeComponents/NewRecipes'

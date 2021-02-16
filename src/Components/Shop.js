@@ -1,6 +1,4 @@
-import React, {useEffect, useState} from 'react'
-import Header from './Header'
-import Footer from './Footer'
+import React from 'react'
 
 
 
@@ -28,7 +26,7 @@ export default function Shop({shopData, onAddToCart}){
                         <div className="shop-item-card-bottom">
                             <h3>{item.name}</h3>
                             <p>{item.price.formatted_with_symbol}</p>
-                            <button onClick={() => onAddToCart(item.id, 1)}>Purchase chicken</button>
+                            <button onClick={() => onAddToCart(item.id, 1)}>Add to cart</button>
                         </div>
                     </div>
                )
