@@ -16,7 +16,8 @@ import ChickenCousCous from './Components/RYL/ChickenCousCous';
 import KungPaoch from './Components/RYL/KungPaoChicken'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import Cart from './Components/Cart'
+import Cart from './Components/Cart/Cart'
+import Checkout from './Components/CheckoutForm/Checkout'
 
 function App() {
 
@@ -100,6 +101,7 @@ return (
           <Route exact path="/" render={() => (<Home dataArray={dataArray}/>)}/>
           <Route path="/recipes" render={() => (<Recipes dataArray={dataArray}/>)}/>
           <Route path="/shop" render={() => (<Shop shopData={shopData} onAddToCart={handleAddToCart}/>)}/>
+          <Route path="/checkout" render={() => (<Checkout cart={cart}/>)}/>
           <Route path="/cart" render={() => (
             <Cart 
               cart={cart} 
