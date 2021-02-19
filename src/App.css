@@ -248,6 +248,8 @@ header {
 
 
 
+
+
 /* -------------------RECIPES YOU'LL LOVE - HOME----------------- */
 
 .ryl-container {
@@ -290,6 +292,7 @@ header {
 
 .recipes-card img {
   transition: linear .2s;
+  width: 100%;
 }
 
 .recipes-card img:hover {
@@ -623,5 +626,31 @@ footer {
      margin: 0 0 20px;
    }
 
+   .ryl-container{
+     width: 100%;
+     justify-content: space-evenly;
+   }
 
+   .ryl-food-display-card {
+     padding: 0;
+     margin: 0 10px;
+   }
+
+  .recipes-youll-love-card-container {
+    justify-content: center;
+  }
+
+  .recipes-card {
+    width: 180px;
+  } 
+
+  .flavor-of-the-week-container img {
+    width: 85%;
+  }
+}
+
+@media (max-width: 425px) {
+  .recipes-youll-love-card-container {
+    flex-wrap: wrap;
+  }
 }

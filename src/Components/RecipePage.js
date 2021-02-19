@@ -6,7 +6,6 @@ export default function RecipePage({dataArray, itemNum}){
 
     return(
         <div>
-            <Header />
             {dataArray.map((item, index) => 
                 <div key={index} className="recipe-card-container">
                     <h1 className="meal-title">{item[itemNum].strMeal}</h1>
@@ -33,7 +32,6 @@ export default function RecipePage({dataArray, itemNum}){
                         </div>
                     </div>
                 </div>)}
-            <Footer />
         </div>
     )
 }
