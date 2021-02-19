@@ -4,11 +4,11 @@ import {Link} from 'react-router-dom'
 export default function FlavorOfTheWeek({dataArray}){
     
     return (
-        <div>
+        <div className="flavor-of-the-week-container">
 
             <h1>Flavor of the week</h1>
 
-            <div className='flavor-of-the-week-container'>
+            <div className='flavor-of-the-week-card'>
                 
             {dataArray.map((item, index) => 
                     dataArray.map(food => 

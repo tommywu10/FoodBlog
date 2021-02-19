@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
 .App {
   text-align: center;
  
@@ -215,7 +221,6 @@ header {
   align-items: center;
   position: relative;
   margin: 0 auto;
-  width: 80%;
 }
 
 .home-main p {
@@ -234,40 +239,22 @@ header {
 
 /* -------------------FOOD DISPLAY-HOME----------------- */
 
-.flavor-of-the-week-container {
+.flavor-of-the-week-card {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 
-.fotw-card {
-  display: flex;
-  flex-direction: column;
-  
-}
-.fotw-card p {
-  font-size: 14px;
-}
-
-.fotw-card img {
-  width: 475px;
-}
 
 
 /* -------------------RECIPES YOU'LL LOVE - HOME----------------- */
 
-.recipes-youll-love-card-container {
+.ryl-container {
   display: flex;
   flex-direction: column;
-}
-
-.ryl-food-display-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 25px;
-  
+  position: relative;
+  top: 50px;
 }
 
 .ryl-food-display-card img {
@@ -278,13 +265,7 @@ header {
   margin: 30px 0;
 }
 
-.ryl-container {
-  position: relative;
-  top: 50px;
-}
-
-
-/* -------------------RECIPES CARDS - HOME----------------- */
+/* ------------------- NEW RECIPES - HOME----------------- */
 
 .recipes-card {
   margin-bottom: 60px;
@@ -315,7 +296,7 @@ header {
   opacity: .8;
 }
 
-.recipes-container {
+.new-recipes-container {
   border-right: 1px solid black;
   padding-right: 40px;
 }
@@ -324,7 +305,10 @@ header {
   text-decoration: none;
 }
 
-
+.recipes-youll-love-card-container {
+  display: flex;
+  flex-direction: column;
+}
 
 
 
@@ -570,4 +554,74 @@ footer {
 
 .social-icon {
   margin: 0 5px;
+}
+
+
+/* -------------------MEDIA QUERY----------------- */
+
+@media (max-width: 1024px) {
+  .home-main {
+    flex-direction: column;
+  }
+
+  .flavor-of-the-week-container {
+    order: 1;
+    margin: 30px 0 0;
+  }
+
+  .new-recipes-container {
+    order: 2;
+    border-right: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0 0 30px;
+    margin: 30px 0 0;
+  }
+
+  .new-recipes-container h1 {
+    margin: 20px 0 ;
+  }
+
+  .recipes-card-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .recipes-card {
+    margin: 0 30px;
+  }
+
+  .ryl-container {
+    order: 3;
+    top: 0;
+  }
+
+  .recipes-youll-love-card-container {
+    flex-direction: row;
+  }
+
+  .chicken-info-container {
+    flex-direction: column;
+  }
+
+  .chicken-info-container img {
+    width: 30%;
+  }
+
+  .chicken-info-information {
+    width: 90%;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+   .navbar {
+     margin: 0 0 20px;
+   }
+
+
 }

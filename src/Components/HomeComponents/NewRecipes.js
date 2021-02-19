@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export default function NewRecipes({dataArray}){
     return (
-        <div className="recipes-container">
+        <div className="new-recipes-container">
             <h1>New Recipes!</h1>
 
             <div className="recipes-card-container">
