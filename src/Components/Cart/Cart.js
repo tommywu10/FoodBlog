@@ -15,9 +15,9 @@ const Cart = ({cart, handleAddToCart, handleUpdateCardQty, handleRemoveFromCart,
                 <CartItem item={item} handleUpdateCardQty={handleUpdateCardQty} handleRemoveFromCart={handleRemoveFromCart}/>
             ))} 
            </div>
-            <div>
-                <h3>Subtotal: {cart.subtotal.formatted_with_symbol}</h3>    
-                <div>
+            <div>  
+                <div className="filled-cart-container-buttons">
+                    <h3>Subtotal: {cart.subtotal.formatted_with_symbol}</h3>  
                     <button id="empty-button" onClick={() => handleEmptyCart}>Empty cart</button>
                     <Link to="/checkout">
                         <button id="check-out-button">Check out</button>
