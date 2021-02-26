@@ -10,20 +10,19 @@ const Cart = ({cart, handleAddToCart, handleUpdateCardQty, handleRemoveFromCart,
 
     const FilledCart = () => (
         <div className="filled-cart-container">
-           <div className="cart-item-container">
-           {cart.line_items.map((item) => (
-                <CartItem item={item} handleUpdateCardQty={handleUpdateCardQty} handleRemoveFromCart={handleRemoveFromCart}/>
-            ))} 
-           </div>
-            <div>  
-                <div className="filled-cart-container-buttons">
-                    <h3>Subtotal: {cart.subtotal.formatted_with_symbol}</h3>  
-                    <button id="empty-button" onClick={() => handleEmptyCart}>Empty cart</button>
-                    <Link to="/checkout">
-                        <button id="check-out-button">Check out</button>
-                    </Link>
-                </div>
-            </div>  
+            <div className="cart-item-container">
+                {cart.line_items.map((item) => (
+                    <CartItem item={item} handleUpdateCardQty={handleUpdateCardQty} handleRemoveFromCart={handleRemoveFromCart}/>
+                ))} 
+            </div>
+            
+            <div className="filled-cart-subtotal">
+                <h3>Subtotal: {cart.subtotal.formatted_with_symbol}</h3>  
+                
+                    <button id="check-out-button"><Link to="/checkout">Go to checkout</Link></button>
+                
+                <button id="empty-button" onClick={() => handleEmptyCart}>Empty cart</button>
+            </div>
         </div>
     )
 

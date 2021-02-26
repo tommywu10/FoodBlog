@@ -25,6 +25,7 @@ export default function Shop({shopData, onAddToCart}){
                         <img src={item.media.source} alt={item.name}/>
                         <div className="shop-item-card-bottom">
                             <h3>{item.name}</h3>
+                            {/* <p id="item-description" dangerouslySetInnerHTML={{__html: item.description}}></p> */}
                             <p>{item.price.formatted_with_symbol}</p>
                             <button onClick={() => onAddToCart(item.id, 1)}>Add to cart</button>
                         </div>
