@@ -4,16 +4,16 @@ import {Link} from 'react-router-dom'
 
 export default function Header({totalItems}){
     return (
-        <div>
-            <header>
+        <header>
+            <div>
                 <Link to="/" className="header-title"><h1>Crazy Kitchen Chicken</h1></Link>
                 <Navbar totalItems={totalItems}/>
-            </header>
-
+            </div>
             <div id="banner-header">
                 <p>The Ultimate Blog for your Cluckin' Needs</p>
             </div>
+            
 
-        </div>
+        </header>
     )
 }
