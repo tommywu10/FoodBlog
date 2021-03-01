@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 export default function Header({totalItems}){
     return (
         <header>
-            <div>
+            <div className="header-container-top">
                 <Link to="/" className="header-title"><h1>Crazy Kitchen Chicken</h1></Link>
                 <Navbar totalItems={totalItems}/>
             </div>
