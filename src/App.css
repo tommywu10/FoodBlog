@@ -553,6 +553,7 @@ header {
 /* -------------------SHOPPING CART----------------- */
 .cart-container {
   height: 100%;
+  width: 100%;
 }
 
 .cart-item-container { 
@@ -851,5 +852,31 @@ footer {
 
   .recipes-main-card p{
     font-size: 12px;
+  }
+
+  .filled-cart-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cart-item {
+    width: 100%;
+  }
+
+  .cart-item-info h4 {
+    font-size: 18px;
+  }
+
+  .filled-cart-subtotal {
+    width: 100%;
+  }
+
+  .cart-item-container {
+    width: 100%;
+    
+  }
+   
+  .cart-item-quantity {
+    width: 40px;
   }
 }
