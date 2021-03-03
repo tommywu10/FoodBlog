@@ -10,7 +10,7 @@ export default function LogInForm(){
 
     
     return(
-        <div>
+        <div className='log-in-modal'>
             <form onSubmit={handleSubmit} className="log-in-form-container">
                 <input 
                     type="text"
