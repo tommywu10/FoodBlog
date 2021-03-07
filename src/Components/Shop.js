@@ -11,12 +11,12 @@ export default function Shop({shopData, onAddToCart}){
             <div className="shop-widget">
                 <h1>shop your favorite chicken</h1>
                 <p>Here's all your favorite choices for either cooking, raising, or slaughtering.</p>
-                <select>
+                {/* <select>
                     <option>Sort By</option>
                     <option>Highest to lowest price</option>
                     <option>Lowest to highest price</option>
                     <option>Name</option>
-                </select>
+                </select> */}
             </div>
 
            <div className="shop-container">

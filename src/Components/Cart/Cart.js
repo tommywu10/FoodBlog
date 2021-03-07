@@ -5,7 +5,9 @@ import {Link} from 'react-router-dom'
 const Cart = ({cart, handleAddToCart, handleUpdateCardQty, handleRemoveFromCart,       handleEmptyCart}) => {
 
     const EmptyCart = () => (
-        <p id="empty-cart-text">You have no items in your cart, <Link to="/shop" id="empty-cart-link">start adding some chickens</Link>!</p>
+        <div className="empty-cart-container">
+            <p id="empty-cart-text">You have no items in your cart, <Link to="/shop" id="empty-cart-link">start adding some chickens!</Link></p>
+        </div>
     )
 
     const FilledCart = () => (
@@ -21,7 +23,7 @@ const Cart = ({cart, handleAddToCart, handleUpdateCardQty, handleRemoveFromCart,
                 
                     <button id="check-out-button"><Link to="/checkout">Go to checkout</Link></button>
                 
-                <button id="empty-button" onClick={() => handleEmptyCart}>Empty cart</button>
+                <button id="empty-button" onClick={handleEmptyCart}>Empty cart</button>
             </div>
         </div>
     )
