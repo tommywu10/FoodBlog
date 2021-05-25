@@ -1,9 +1,11 @@
 import React from 'react'
-import RecipePage from '../RecipePage'
+import HardCodedRecipePage from '../HardCodedRecipePage'
+
+
 
 export default function KungPaoChicken({dataArray}){
     
     return(
-        <RecipePage dataArray={dataArray} itemNum={6}/>
+        <HardCodedRecipePage dataArray={dataArray} itemNum={6}/>
     )
 }

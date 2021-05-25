@@ -18,12 +18,13 @@ import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Cart from './Components/Cart/Cart'
 import Checkout from './Components/CheckoutForm/Checkout'
-
+import RecipePage from './Components/RecipePage'
 function App() {
 
 let [data, setData] = useState([])
 const [shopData, setShopData] = useState([])
 const [cart, setCart] = useState({})
+const [recipeData, setRecipeData] = useState('yo')
 //-------------------FETCH CHICKEN DATA-------------------------------------------------------
   
 
@@ -98,8 +99,8 @@ return (
     <Header totalItems={cart.total_items}/>
 
         <Switch>
-          <Route exact path="/" render={() => (<Home dataArray={dataArray}/>)}/>
-          <Route path="/recipes" render={() => (<Recipes dataArray={dataArray}/>)}/>
+          <Route exact path="/" render={() => (<Home dataArray={dataArray} recipeData={recipeData} setRecipeData={setRecipeData}/>)}/>
+          <Route path="/recipes" render={() => (<Recipes dataArray={dataArray} recipeData={recipeData} setRecipeData={setRecipeData}/>)}/>
           <Route path="/shop" render={() => (<Shop shopData={shopData} onAddToCart={handleAddToCart}/>)}/>
           <Route path="/checkout" render={() => (<Checkout cart={cart}/>)}/>
           <Route path="/cart" render={() => (
@@ -117,6 +118,7 @@ return (
           <Route path="/tandoorichicken" render={() => (<TandooriChicken dataArray={dataArray}/>)}/>
           <Route path="/chickencouscous" render={() => (<ChickenCousCous dataArray={dataArray}/>)}/>
           <Route path="/kungpaochicken" render={() => (<KungPaoch dataArray={dataArray}/>)}/>
+          <Route exact path="/recipepage" render={() => <RecipePage recipeData={recipeData} setRecipeData={setRecipeData}/>} />
         </Switch>
 
     <Footer />

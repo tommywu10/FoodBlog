@@ -1,8 +1,8 @@
 import React from 'react'
-import RecipePage from '../RecipePage'
+import HardCodedRecipePage from '../HardCodedRecipePage'
 
 export default function ChickenCousCous({dataArray}){
     return(
-        <RecipePage dataArray={dataArray} itemNum={5}/>
+        <HardCodedRecipePage dataArray={dataArray} itemNum={5}/>
     )
 }

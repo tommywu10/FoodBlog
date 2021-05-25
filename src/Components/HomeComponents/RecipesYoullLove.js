@@ -1,7 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-export default function RecipesYoullLove({dataArray}){
+export default function RecipesYoullLove({dataArray, recipeData, setRecipeData}){
+
+   /*  const clickHandler = (fewd) => {
+        setRecipeData(fewd);
+   } */
+
     return(
         <div className="ryl-container">
             <h1>Recipes You'll Love</h1>

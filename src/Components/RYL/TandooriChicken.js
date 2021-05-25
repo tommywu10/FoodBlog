@@ -1,8 +1,8 @@
 import React from 'react';
-import RecipePage from '../RecipePage';
+import HardCodedRecipePage from '../HardCodedRecipePage'
 
 export default function TandooriChicken({dataArray, itemNum}){
     return(
-        <RecipePage dataArray={dataArray} itemNum={4}/>
+        <HardCodedRecipePage dataArray={dataArray} itemNum={4}/>
     )
 }

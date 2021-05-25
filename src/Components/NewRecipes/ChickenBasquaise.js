@@ -1,9 +1,9 @@
 import React from 'react'
-import RecipePage from '../RecipePage'
+import HardCodedRecipePage from '../HardCodedRecipePage'
 
 export default function ChickenBasquaise({dataArray}){
     
     return(
-        <RecipePage dataArray={dataArray} itemNum={7}/>
+        <HardCodedRecipePage dataArray={dataArray} itemNum={7}/>
     )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-import RecipePage from '../RecipePage'
+import HardCodedRecipePage from '../HardCodedRecipePage'
 
 export default function ChickenKaraage({dataArray}){
     
     return(
-        <RecipePage dataArray={dataArray} itemNum={2}/>
+        <HardCodedRecipePage dataArray={dataArray} itemNum={2}/>
     )
 }
