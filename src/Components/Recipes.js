@@ -23,7 +23,7 @@ export default function Recipes({dataArray, recipeData, setRecipeData}){
                 {dataArray.map((item, index) => 
                     dataArray.map((food, index) => 
                         food.map(fewd => 
-                            <Link to='/recipepage' onClick={() => clickHandler(fewd)}>
+                            <Link className="recipe-link" to='/recipepage' onClick={() => clickHandler(fewd)}>
                         <div key={fewd.idMeal} className="recipes-main-card">
                             <img src={fewd.strMealThumb} alt="food" />
                                 <div className="recipes-main-card-text">

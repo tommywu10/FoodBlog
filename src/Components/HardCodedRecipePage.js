@@ -8,12 +8,12 @@ export default function HardCodedRecipePage({dataArray, itemNum}){
             {dataArray.map((item, index) => 
                 <div key={index} className="recipe-card-container">
                     <h1 className="meal-title">{item[itemNum].strMeal}</h1>
-                    <img src={item[itemNum].strMealThumb} alt="food" />
+                  
                     <h4 className="meal-area">{item[itemNum].strArea}</h4>
 
                     <div className="ingredients-instructions-container">
 
-                        <ul>
+                        <ul className="ingredients">
                             <h3>Ingredients</h3>
                             <li key={index}>{item[itemNum].strIngredient1} - {item[itemNum].strMeasure1}</li>
                             <li key={index}>{item[itemNum].strIngredient2} - {item[itemNum].strMeasure2}</li>
@@ -25,6 +25,9 @@ export default function HardCodedRecipePage({dataArray, itemNum}){
                             <li key={index}>{item[itemNum].strIngredient8} - - {item[itemNum].strMeasure8}</li>
                             <li key={index}>{item[itemNum].strIngredient9} - - {item[itemNum].strMeasure9}</li>
                         </ul>
+
+                        <img src={item[itemNum].strMealThumb} alt="food" />
+
                         <div className="instructions">
                             <h3>Method</h3>
                             <p>{item[itemNum].strInstructions}</p>
