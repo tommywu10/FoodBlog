@@ -691,6 +691,10 @@ header {
   color: white;
   letter-spacing: .2px;
 }
+
+#empty-cart-link {
+  color: white;
+}
 /* -------------------FOOTER----------------- */
 
 footer {
