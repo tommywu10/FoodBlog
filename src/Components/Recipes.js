@@ -23,14 +23,15 @@ export default function Recipes({dataArray, recipeData, setRecipeData}){
                 {dataArray.map((item, index) => 
                     dataArray.map((food, index) => 
                         food.map(fewd => 
-                            <Link className="recipe-link" to='/recipepage' onClick={() => clickHandler(fewd)}>
+                            
                         <div key={fewd.idMeal} className="recipes-main-card">
+                            <Link className="recipe-link" to='/recipepage' onClick={() => clickHandler(fewd)}>
                             <img src={fewd.strMealThumb} alt="food" />
                                 <div className="recipes-main-card-text">
                                     <p>{fewd.strArea}</p>
                                     <h2>{fewd.strMeal}</h2> 
                                 </div>
-                        </div> </Link>   )
+                        </Link>  </div>    )
                         ))}
                 </div>
                  

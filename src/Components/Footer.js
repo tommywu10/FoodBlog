@@ -5,9 +5,7 @@ export default function Footer(){
     return (
         <footer>
             <div className='footer-links'>
-                <p>Events</p>
-                <p>Services</p>
-                <p>Contact</p>
+                <p>A ridiculous food blog by Tommy Wu</p>
             </div>
 
             <div className='social-media-buttons-footer'>
